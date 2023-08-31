@@ -17,7 +17,7 @@ Tested on PHP v 5.4
 Needed - cURL
 
 #### Usage
-Download files from src folder - view [example] for details
+Download files from src folder - view [example](example/oauth2.php) for details
 
 For login use:
 ``` bash
