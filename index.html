@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Erstegroup API | erstegroup-api</title>
+<meta name="google-site-verification" content="UadqqAlLYTPiRK68OJmvXlt2ljnpmIX5shFHGQ8vKd0" />
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Erstegroup API" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="API for Erstegroup in PHP" />
+<meta property="og:description" content="API for Erstegroup in PHP" />
+<link rel="canonical" href="https://justyand.github.io/erstegroup-api/" />
+<meta property="og:url" content="https://justyand.github.io/erstegroup-api/" />
+<meta property="og:site_name" content="erstegroup-api" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Erstegroup API" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"API for Erstegroup in PHP","headline":"Erstegroup API","name":"erstegroup-api","url":"https://justyand.github.io/erstegroup-api/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/erstegroup-api/assets/css/style.css?v=4eb594542f7e0bb9bc6901a55b59010ae53cf6b2">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/erstegroup-api/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://justyand.github.io/erstegroup-api/">erstegroup-api</a></h1>
+      
+
+      <h1 id="erstegroup-api">Erstegroup API</h1>
+
+<p>Unofficial client for interacting with Erstegroup API</p>
+
+<p>For one of mine customers I’ve created this lib for getting
+info about payments done through his web/shop.</p>
+
+<p>Implemented API for CSAS:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />OAUTH2</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Accounts - read only</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Transactions - read only</li>
+</ul>
+
+<h4 id="php">PHP</h4>
+<p>Tested on PHP v 5.4
+Needed - cURL</p>
+
+<h4 id="usage">Usage</h4>
+<p>Download files from src folder - view <a href="/erstegroup-api/example/oauth2.php">example</a> for details</p>
+
+<p>For login use:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s1">'mode'</span> <span class="o">=&gt;</span> Constants::API_GUI
+</code></pre></div></div>
+<p>For just work with data ( you have a method for refreshing token on another file )</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s1">'mode'</span> <span class="o">=&gt;</span> Constants::API_SILENT
+</code></pre></div></div>
+<p>Needed actions from application on https://developers.erstegroup.com/portal/ :</p>
+<ul>
+  <li>copy API_KEY, CLIENT_ID and CLIENT_SECRET</li>
+  <li>set own url_redirect after OAUTH2 login 
+used identificator “complete” on line 125 in erstegroup.php</li>
+</ul>
+
+<h4 id="todo-for-you">TODO for you</h4>
+<p>Implement own method for loadin/saving tokens ( now unsecure loading/saving into file )
+Implement own method for viewing data ( now just plain var_dump )</p>
+
+<h4 id="development">Development</h4>
+<p>If you want implement something into this lib, feel free to add request.</p>
+
+<h4 id="license">License</h4>
+<p>Feel free to use this lib as you wish.
+I will appreciate if you mention me in your project in some way :-)</p>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/justyand/erstegroup-api/edit/master/readme.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
